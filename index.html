@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+</head>
+<body>
+    <h2 class="content-head is-center">Vēstures viktorīna!</h2>
+    <aside>
+         <p>
+             We would <em>love</em> to hear from you! </p>
+             <p>Please use the <b><em>Contact Form</em></b>
+             to send us a message.
+         </p>
+     </aside>
+  
+  <!-- START HERE -->
+ 
+  
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbzxbyqGeNbHqKlIwwRk72ce9jp3augCGd4IjfYjAw/exec">
+      <!-- change the form action to your script url -->
+  
+      <div class="form-elements">
+        <fieldset class="pure-group">
+            <label for="name">Vārds Uzvārds: </label>
+            <input id="name" name="name" placeholder="Vārds Uzvārds" required>
+          </fieldset>
+          <fieldset class="pure-group">
+            <label for="class">Klase: </label>
+            <input id="class" name="Klase" placeholder="Ievadiet Klasi" required>
+          </fieldset>
+          <h2>Vai jums ir dzīve pēc rītdienas</h2>
+          <fieldset class="pure-group">
+            <label for="option-one" class="pure-checkbox">Jā </label>
+            <input id="option-one" type="checkbox"  name="Atbilde1" value="" >       
+          </fieldset>
+          <fieldset class="pure-group">         
+                <label for="option-one" class="pure-checkbox"> Nē </label>
+                <input id="option-one" type="checkbox"  name="Atbilde2" value="" > 
+          </fieldset>
+          <h2> 2 jautajums Kas notiek šodien</h2>
+          <fieldset class="pure-group">
+            <label for="option-one" class="pure-checkbox"></label>Darbs </label>
+            <input id="option-one" type="checkbox"  name="Darbs" value="Darbs" >       
+          </fieldset>
+          <fieldset class="pure-group">         
+                <label for="option-one" class="pure-checkbox"> Plapāšana</label>
+                <input id="option-one" type="checkbox"  name="2jautājums" value="Plapāšana" > 
+          </fieldset>
+          <fieldset class="pure-group">         
+            <label for="option-one" class="pure-checkbox"> Lielas lietas</label>
+            <input id="option-one" type="checkbox"  name="Lietas" value="Lietas lietas" > 
+      </fieldset>
+  
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+      </div>
+  
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div class="thankyou_message" style="display:none;">
+        <h2><em>Thanks</em> for contacting us!
+          We will get back to you soon!</h2>
+      </div>
+  
+    </form>
+  
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="./Contact Form Example_files/form-submission-handler.js.lejupielāde"></script>
+  <!-- END -->
+</body>
+</html>
